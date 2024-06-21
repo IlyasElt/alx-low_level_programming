@@ -5,7 +5,7 @@
  * with proper grammar, but the outcome is a piece of art,
  */
 
-#include <sdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
