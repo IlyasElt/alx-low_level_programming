@@ -1,0 +1,1 @@
+Exploring how functions and nested loops work in the programming language C.
