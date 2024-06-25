@@ -8,13 +8,15 @@
 
 int main(void)
 {
-    char i[] = "_putchar";
-    int length = sizeof(i) / sizeof(i[0]);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-    for (int j = 0 ; j < length ; j++)
-    {
-        _putchar(i[j]);
-    }
-     _putchar('\n');
-    return (0);
+return (0);
 }
