@@ -7,7 +7,7 @@
  * Return: 1 if the argument is alphabetic and 0 if it's not.
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 if (isalpha(c))
 {
