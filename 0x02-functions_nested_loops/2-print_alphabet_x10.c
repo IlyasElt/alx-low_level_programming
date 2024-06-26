@@ -23,10 +23,7 @@ for (letter = 'a' ; letter <= 'z' ; letter++)
 {
 _putchar(letter);
 }
-if (j < 10)
-{
 _putchar('\n');
-}
 }
 return;
 }
