@@ -22,7 +22,7 @@ n = (counter) / 2;
 }
 else
 {
-n = (counter - 1) / 2;
+n = (counter + 1) / 2;
 }
 
 for (i = n ; str[i] != '\0' ; i++)
