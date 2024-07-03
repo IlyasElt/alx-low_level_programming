@@ -1,0 +1,1 @@
+Diving deeper into the concepts of pointers, arrays and strings in the C programming language.
