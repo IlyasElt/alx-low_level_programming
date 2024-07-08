@@ -22,5 +22,10 @@ break;
 }
 }
 
+if (s[i] == c)
+{
+ptr = &s[i];
+}
+
 return (ptr);
 }
