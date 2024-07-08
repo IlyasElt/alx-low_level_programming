@@ -18,13 +18,17 @@ for (i = 0 ; haystack[i] != '\0' ; i++)
 if (haystack[i] == needle[0])
 {
 ptr = &haystack[i];
-for (j = 0 ; needle[j] != '\0' ; j++, i++)
+for (j = 0 ; needle[j] != '\0' ; j++)
 {
-if (haystack[i] != needle[j])
+if (haystack[i + j] != needle[j] || haystack[i + j] == '\0')
 {
 ptr = NULL;
 break;
 }
+}
+if (needle[j] == '\0')
+{
+return (ptr);
 }
 }
 }
