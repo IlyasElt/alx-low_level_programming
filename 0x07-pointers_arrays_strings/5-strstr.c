@@ -33,5 +33,5 @@ return (ptr);
 }
 }
 
-return (ptr);
+return (NULL);
 }
