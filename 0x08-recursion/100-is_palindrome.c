@@ -13,15 +13,10 @@ int is_palindrome(char *s);
 
 int _strlen(char *s)
 {
-int len = 0;
-
-while (*s != '\0')
-{
-len++;
-s++;
-}
-
-return (len);
+if (*s == '\0')
+return (0);
+else
+return (1 + _strlen(s + 1));
 }
 
 /**
