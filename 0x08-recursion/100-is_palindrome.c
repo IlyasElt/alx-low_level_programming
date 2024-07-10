@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-int _strlen(char *s);
-int is_palindrome_recursive(char *s, int start, int end);
-int is_palindrome(char *s);
-
 /**
  * _strlen - Calculates the length of a string.
  * @s: The string to calculate the length of.
