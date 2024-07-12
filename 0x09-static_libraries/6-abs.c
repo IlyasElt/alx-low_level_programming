@@ -1,13 +1,15 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
- * _abs - Function that returns the absolute value of a number.
- * @n: The number that the functions works around.
- * Return: the absolute value of a number.
- */
-
-int _abs(int n)
+* _abs - prints the absolute value of a number
+*@i: number targeted
+*Return: returns 0
+*/
+int _abs(int i)
 {
-return (abs(n));
+if (i > 0)
+return (i);
+else if (i < 0)
+return (-i);
+else
+return (0);
 }
