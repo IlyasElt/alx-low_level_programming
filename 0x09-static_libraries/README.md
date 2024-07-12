@@ -1,0 +1,1 @@
+Diving into the concept of static libraries in the C programming language.
