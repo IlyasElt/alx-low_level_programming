@@ -30,7 +30,7 @@ cents = atoi(argv[1]);
 
 if (cents < 0)
 {
-printf("Error\n");
+printf("0\n");
 return (0);
 }
 
