@@ -1,0 +1,1 @@
+Exploring the concept of memory allocation in C programming language by understanding the functions malloc and free.
