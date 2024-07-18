@@ -56,26 +56,26 @@ return (ptr);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j, length_s1, length_str;
+unsigned int i, j, length_s1, length_s2, length_str;
 char *new_string;
 
-/*if NULL is passed, treated as an empty string. */
 if (s1 == NULL)
 {
 s1 = "";
 }
-
 if (s2 == NULL)
 {
 s2 = "";
 }
 
-/*
- * calucalte the length of passed strings,
- * and new string that will be returned
- */
 length_s1 = _strlen(s1);
+length_s2 = _strlen(s2);
 length_str = length_s1 + n;
+
+if (n > length_s2)
+{
+n = length_s2;
+}
 
 /* allocates memory for the new string */
 new_string = malloc_check(sizeof(char) * length_str);
