@@ -74,12 +74,13 @@ if (n > length_s2)
 {
 n = length_s2;
 }
-
 length_str = length_s1 + n;
 
-/* allocates memory for the new string */
-new_string = malloc_check(sizeof(char) * length_str);
-
+new_string = malloc_check(sizeof(char) * length_str + 1);
+if (new_string == NULL)
+{
+return (NULL);
+}
 /*
  * concatenates the two passed strings up to n bytes
  * of the second passed string into the new string
@@ -93,7 +94,6 @@ for (i = 0; i < n; i++, j++)
 new_string[j] = s2[i];
 }
 new_string[j] = '\0';
-
 
 return (new_string);
 }
