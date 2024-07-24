@@ -22,16 +22,21 @@ return (NULL);
 }
 
 dog->name = strdup(name);
-dog->owner = strdup(owner);
-dog->age = age;
-
-if (dog->name == NULL || dog->owner == NULL)
+if (dog->name == NULL)
 {
-free(dog->name);
-free(dog->owner);
 free(dog);
 return (NULL);
 }
+
+dog->owner = strdup(owner);
+if (dog->owner == NULL)
+{
+free(dog->name);
+free(dog);
+return (NULL);
+}
+
+dog->age = age;
 
 return (dog);
 }
