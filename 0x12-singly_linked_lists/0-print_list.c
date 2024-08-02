@@ -11,7 +11,7 @@
  * Return: length of the string
  */
 
-unsigned int str_len(char *str)
+unsigned int str_len(const char *str)
 {
 int i;
 unsigned int len = 0;

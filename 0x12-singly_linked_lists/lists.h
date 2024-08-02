@@ -20,5 +20,5 @@ typedef struct list_s
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
-unsigned int str_len(char *str);
+unsigned int str_len(const char *str);
 #endif /* LISTS_H */
