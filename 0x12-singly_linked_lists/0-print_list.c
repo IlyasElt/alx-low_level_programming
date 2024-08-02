@@ -5,6 +5,32 @@
 
 
 /**
+ * str_len - counts the length of a string
+ * @str: string to count
+ *
+ * Return: length of the string
+ */
+
+unsigned int str_len(char *str)
+{
+int i;
+unsigned int len = 0;
+
+if (str ==  NULL)
+{
+return (0);
+}
+
+for (i = 0; str[i] != '\0'; i++)
+{
+len++;
+}
+
+return (len);
+}
+
+
+/**
  * print_list - prints all the elements of a list_t list.
  * @h: The list to print
  *
@@ -35,30 +61,4 @@ temp = temp->next;
 }
 
 return (elements);
-}
-
-
-/**
- * str_len - counts the length of a string
- * @str: string to count
- *
- * Return: length of the string
- */
-
-unsigned int str_len(char *str)
-{
-int i;
-unsigned int len = 0;
-
-if (str ==  NULL)
-{
-return (0);
-}
-
-for (i = 0; str[i] != '\0'; i++)
-{
-len++;
-}
-
-return (len);
 }
